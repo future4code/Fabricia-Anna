@@ -4,73 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="index.css">
     <title>Controle de Estoque</title>
 </head>
 <body>
+    <div class="cabecalho">
+       
+        <a href="index.html">Página Inicial</a>
+        <a href="ctrl-estoque.html">Controle de Estoque</a>
+        <a href="add-produto.html">Adicionar Produto</a>
+        <a href="funcionarios.html">Funcionários</a>
+             
+    
+    </div>
     <div>
         <p><h1>Beef Sanduba</h1></p>
     </div>
-    
-    <div>
-        <table width="40%" border="1">
-                            
-            <td><a href="index.html">Página Inicial</a></td>
-            <td><a href="ctrl-estoque.html">Controle de Estoque</a></td>
-            <td><a href="add-produto.html">Adicionar Produto</a></td>
-            <td><a href="funcionarios.html">Funcionários</a></td>
-             
-    </table>
-    </div>
-
+      
     <h2>Controle de Estoque</h2>
 
-    <table>
+    <table class="estoque">
         <tr>
-            <th>Foto</th>
-            <th>Descrição</th>
-            <th>Preço (R$)</th>
-            <th>Quantidade disponível</th>
+            <td class="tabela">Foto</td>
+            <td class="tabela">Descrição</td>
+            <td class="tabela">Preço (R$)</td>
+            <td class="tabela" >Quantidade disponível</td>
         </tr>
 
         <tr>
             <td><img src="../img/RIB.png" alt="Sanduba de costela bovina" height="80" width="110"/></td>
-            <td> Beef Rib </td>
-            <td> R$ 25,90 </td>
-            <td> 20 </td>
+            <td class="conteudo-tabela"> Beef Rib </td>
+            <td class="conteudo-tabela"> R$ 25,90 </td>
+            <td class="conteudo-tabela"> 20 </td>
         </tr>
 
         <tr>
             <td><img src="../img/PIG.jpg" alt="Sanduba de costela suína" height="80" width="110"/></td>
-            <td> Miss Pig </td>
-            <td> R$ 25,90 </td>
-            <td> 20 </td>
+            <td class="conteudo-tabela"> Miss Pig </td>
+            <td class="conteudo-tabela"> R$ 25,90 </td>
+            <td class="conteudo-tabela"> 20 </td>
         </tr>
 
         <tr>
             <td><img src="../img/LOKA.png" alt="Sanduba de carne assada" height="80" width="110"/></td>
-            <td> A Loka </td>
-            <td> R$ 25,90 </td>
-            <td> 15 </td>
+            <td class="conteudo-tabela"> A Loka </td>
+            <td class="conteudo-tabela"> R$ 25,90 </td>
+            <td class="conteudo-tabela"> 15 </td>
         </tr>
 
         <tr>
             <td><img src="../img/ifood carne seca.png" alt="Sanduba de carne seca" height="80" width="110"/></td>
-            <td> Arretado </td>
-            <td> R$ 24,90 </td>
-            <td> 17 </td>
+            <td class="conteudo-tabela"> Arretado </td>
+            <td class="conteudo-tabela"> R$ 24,90 </td>
+            <td class="conteudo-tabela"> 17 </td>
         </tr>
 
         <tr>
             <td><img src="../img/ifood frangolino.png" alt="Sanduba de frango desfiado cremoso" height="80" width="110"/></td>
-            <td> Frangolino </td>
-            <td> R$ 25,90 </td>
-            <td> 12 </td>
+            <td class="conteudo-tabela"> Frangolino </td>
+            <td class="conteudo-tabela"> R$ 25,90 </td>
+            <td class="conteudo-tabela"> 12 </td>
         </tr>
         
         <!-- Crie mais uma linha desta tabela abaixo \/ -->
         <!-- Criada mais uma linha desta tabela abaixo \/ -->
 
     </table>
+
+    <div class="rodape">
+        <p><b>Siga-nos nas redes sociais!</b> </p>
+        <img src="https://image.flaticon.com/icons/png/512/25/25305.png" height="40" width="45"/>
+        <img src="https://image.flaticon.com/icons/png/512/25/25425.png" height="40" width="45"/>
+        <img src="https://image.flaticon.com/icons/png/512/8/8800.png" height="40" width="45"/>
+    </div>
 
 </body>
 </html>

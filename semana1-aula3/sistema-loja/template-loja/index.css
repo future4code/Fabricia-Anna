@@ -1,0 +1,56 @@
+body {
+    background-color: yellow;
+}
+
+.cabecalho {
+    text-align: center;
+    font-size: 18px;
+    font-family: monospace;
+    font-weight: bold;
+    background-color: white;
+    width: 400%;
+    display:inline;
+    margin: 300px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+    
+
+.rodape {
+    text-align: center;
+    position:fixed;
+    bottom:0;
+    width:100%;  
+}
+
+.tabela{
+    background-color:gray;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    width: 20%;
+    margin-top: 400px;
+    table-layout: auto;
+  
+}
+
+.conteudo-tabela{
+background-color: white;
+text-align: center;
+font-weight: bold;
+}
+
+.funcionarios{
+    
+    background-color: white;
+    display:inline;
+    margin: 300px;
+    padding: 10px;
+    
+
+}
+
+
+.form.add {
+
+}
