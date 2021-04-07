@@ -1,26 +1,44 @@
 body {
-    background-color: yellow;
-}
+    background-color:black;
+    }
 
-.cabecalho {
-    text-align: center;
-    font-size: 18px;
-    font-family: monospace;
-    font-weight: bold;
-    background-color: white;
-    width: 400%;
-    display:inline;
-    margin: 300px;
-    padding: 10px;
-    box-sizing: border-box;
-  }
+.cabecalho-logo{
+    background-color:#f7c20d;
+    height: 120px;
+    margin-top: -0.6%;
+    margin-left: -0.6%;
+    margin-right: -0.6%;
     
-
-.rodape {
+}
+.cabecalho {
+    background-color:yellow;
+    margin-top: -0.5%;
+    margin-left: -0.6%;
+    margin-right: -0.6%;
     text-align: center;
-    position:fixed;
-    bottom:0;
-    width:100%;  
+       
+ }
+    a{
+        color: black;
+        text-decoration: none;
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        padding: 20px;
+    }
+    a:hover{
+        color:green;
+    }
+.rodape {
+    background-color:#f7c20d;
+    text-align: center;
+    width: 100%;
+    position:absolute;
+    height: 100px;
+    margin-top: 5%;
+    margin-left: -0.6%;
+    margin-right: -0.6%;
+      
 }
 
 .tabela{
@@ -29,7 +47,6 @@ body {
     color: white;
     text-align: center;
     width: 20%;
-    margin-top: 400px;
     table-layout: auto;
   
 }
@@ -50,7 +67,6 @@ font-weight: bold;
 
 }
 
-
-.form.add {
-
+.texto{
+color: white;
 }
