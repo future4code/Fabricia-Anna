@@ -4,45 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="index.css">
     <title>Adicionar Produto</title>
 </head>
 <body>
-    <div>
-        <p><h1>Beef Sanduba</h1></p>
-    </div>
-    
-    <div>
-        <table width="40%" border="1">
-                            
-            <td><a href="index.html">Página Inicial</a></td>
-            <td><a href="ctrl-estoque.html">Controle de Estoque</a></td>
-            <td><a href="add-produto.html">Adicionar Produto</a></td>
-            <td><a href="funcionarios.html">Funcionários</a></td>
+    <div class="cabecalho-logo">
+        <img src="CARIMBO BEEF SANDUBA.png" alt="Beef Sanduba" width="130" height="120" />
+        </div>
+    <div class="cabecalho">
+                                  
+        <a href="index.html">Página Inicial</a>
+        <a href="ctrl-estoque.html">Controle de Estoque</a>
+        <a href="add-produto.html">Adicionar Produto</a>
+        <a href="funcionarios.html">Funcionários</a>
              
-    </table>
+        </div>
+    <div class="texto">
+        <p><h1>Beef Sanduba</h1></p>
+        <h2>Adicionar Produto</h2>
     </div>
-
-    
-    <h2>Adicionar Produto</h2>
+           
     <form action="">
-        <div>
+        <div class="texto">
             <label for="link-foto">Link para foto: </label>
             <input type="url" id="link-foto" name="link-foto">
         </div>
         <br>
-        <div>
+        <div class="texto">
             <label for="descricao">Descrição do produto: </label>
             <!-- Adicione o id apropriado para o input abaixo -->
             <input type="text" id="descricao" name="descrição">
         </div>
         <br>
-        <div>
+        <div class="texto">
             <label for="preco">Preço (em R$): </label>
             <!-- Adicione o id apropriado e o type para receber números abaixo -->
             <input type="number" id="preco" name="preço">
         </div>
         <br>
-        <div>
+        <div class="texto">
             <!-- Preencha as propriedades necessárias para os elementos abaixo -->
             <label for="quantidade">Quantidade disponível: </label>
             <input type="number" id="quantidade" name="Quantidade"  >
@@ -54,6 +54,13 @@
         </div>
 
     </form>
+
+    <div class="rodape">
+        <p><b>Siga-nos nas redes sociais!</b> </p>
+        <img src="https://image.flaticon.com/icons/png/512/25/25305.png" height="40" width="45"/>
+        <img src="https://image.flaticon.com/icons/png/512/25/25425.png" height="40" width="45"/>
+        <img src="https://image.flaticon.com/icons/png/512/8/8800.png" height="40" width="45"/>
+    </div>
 
 </body>
 </html>
