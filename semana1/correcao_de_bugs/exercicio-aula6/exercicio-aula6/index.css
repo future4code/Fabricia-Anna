@@ -62,7 +62,10 @@ div>p:first-child {
 }
 
 .icone {
-    height: 15px;
+    height: 30px;
+    width: 30px;
+    margin-top: 10px;
+    
 }
 
 
@@ -126,7 +129,7 @@ td button {
 }
 
 .container-do-search {
-    margin-top: 20px;
+    margin-top: 05px;
     height: 100px;
 }
 
