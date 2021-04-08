@@ -31,7 +31,7 @@ img {
 }
 
 div>p:first-child {
-    display:flex;
+    display:inline;
     
 }
 
@@ -131,7 +131,11 @@ td button {
 .container-do-search {
     margin-top: 05px;
     height: 100px;
+    
 }
+button:hover{
+background-color: #635a3d;
+ }
 
 
 #back-button {
@@ -145,5 +149,5 @@ td button {
 }
 
 #back-button:hover {
-    background-color: #635a3d
+    background-color: #635a3d;
 }
