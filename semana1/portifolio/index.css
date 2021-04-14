@@ -1,0 +1,343 @@
+*{ margin: 0; padding: 0;}
+
+body {
+    background-color: black;
+}
+
+.cabecalho {
+background-color: gray;
+text-align:right;
+padding-bottom: 10px;
+
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-right: 40px;  
+    
+       
+}
+
+a:hover{
+    color:black;
+}
+
+#link-proj:hover{
+    color: gray;
+}
+
+#linktopo{
+margin-left: 500px;
+color: black;
+font-size: 20px;
+}
+
+#linktopo1{
+    margin-left: 40px;
+    color: white;
+    font-size: 20px;
+    }
+
+#linktopo2{
+margin-left: 40px;
+color: black;
+font-size: 20px;
+}
+
+#linktopo3{
+    margin-left: 40px;
+    color: white;
+    font-size: 18px;
+    }
+
+    #linktopoprojeto{
+        margin-left: 570px;
+        color: white;
+        font-size: 18px;
+        
+        }
+    
+
+.text-cabecalho{
+    color: white;
+    text-decoration: none;
+    font-size: 35px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-align: left;
+    padding-top: 25px;
+    margin-left: 50px;
+           
+}
+.foto{
+    margin-left: 150px;
+    margin-top: 50px;
+    margin-bottom: 520px;
+   
+}
+.foto-projeto{
+    margin-left: 530px;
+    margin-top: 30px;
+    margin-bottom: 520px;
+   
+}
+.box{
+    background-color:black;       
+    border: 2px solid white;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    width: 500px;
+    left: 15%;
+    margin-top: 30px;
+    margin-left: 450px;
+    margin-bottom: 120px;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    position:relative;   
+        
+  }
+
+  /*PROJETOS*/
+
+  .projeto{
+    color:white;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: -540px;
+
+    
+}
+
+.box-projetos{
+  background-color:transparent;       
+  width: 300px;
+  left: 15%;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-bottom: 50px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  position:relative;   
+      
+}
+
+.box2-projetos{
+  background-color:transparent;       
+  width: 300px;
+  left: 15%;
+  margin-top: -110px;
+  margin-left: 490px;
+  margin-bottom: 50px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  position:absolute;   
+      
+}
+
+.texto-projetos{
+  color:white;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  text-align: justify;
+     
+}
+
+.titulo-projetos{
+  color:black
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  padding-top: 20px; 
+
+  
+}
+
+
+
+  /*HABILIDADE*/
+
+  .Habilidades{
+      color:black;
+  }
+
+  .box-habilidade{
+    background-color:transparent;       
+    width: 300px;
+    left: 15%;
+    margin-top: 40px;
+    margin-left: 80px;
+    margin-bottom: 0px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    position:relative;   
+        
+  }
+
+  .box2-habilidade{
+    background-color:transparent;       
+    width: 300px;
+    left: 15%;
+    margin-top: -215px;
+    margin-left: 420px;
+    margin-bottom: 0px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    position:absolute;   
+        
+  }
+
+  .texto-habilidade{
+    color:black;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    text-align: justify;
+    font-weight: bold;
+       
+ }
+
+ .titulo-habilidade{
+    color:black
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 20px; 
+
+    
+}
+
+.text-box2{
+    color:white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: -860px;
+    margin-bottom: 10px;
+    margin-left: 800px;
+}
+
+
+
+.texto{
+    color:white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    margin-top:20px;
+    }
+
+/*CONTATO*/
+.contato{
+    margin-top: -150px;
+    margin-bottom: 150px;
+    
+}
+
+form input{
+    display: block;
+    margin-left: 590px;
+}
+
+button{
+width: 100px;
+}
+
+
+.titulo2-box{
+    color:black;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 20px; 
+
+    
+}
+
+.escolas{
+    background-color: #d1cbcb;
+    color:black;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    margin-bottom: 0px;
+    padding-bottom: 30px;
+    padding-left:  120px;
+    
+}
+.Habilidades{
+    background-color:#d1cbcb;
+    color:black;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    margin-bottom: 200px;
+    padding-bottom: 30px;
+    text-align: center;
+    
+}
+.titulo3-box{
+    color:black
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 80px;
+    margin-bottom: 10px;
+    
+    
+    
+}
+
+.titu-func{
+    color:black
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    
+
+}
+.rodape {
+    background-color: gray;
+    width: 100%;
+    height: 80px;  
+    position:fixed;
+    bottom: 0;      
+    color:black;    
+    font-size: 18px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    
+    }
+
+    /*PROJETOS*/
+
+    .seletivo {
+     
+     margin-left: 200px;
+     color: white;
+    }
+
+    #text-seletivo{
+        margin-top: 50px;         
+        color: white;
+     margin-bottom: 20px;
+    }
+
+
+.lojinha {
+    
+    padding-left: 80px;
+    margin-bottom: 200px; 
+    
+   }
+   #text-lojinha{
+    margin-top: 50px;         
+    color: white;
+ margin-bottom: 20px;
+}
+
+    
