@@ -87,7 +87,7 @@ div {
     grid-column: 5/7;    
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     
 #main-container {
     display: flex;
