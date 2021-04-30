@@ -13,8 +13,8 @@ function imprimirDespesas(despesas){
         divDespesas.innerHTML+=
         `<div>
             valor:R$${despesas.valor} 
-            tipo:${despesas.tipo}
-            descrição:${despesas.descricao}
+            | tipo:${despesas.tipo}
+            | descrição:${despesas.descricao}
         </div>`
     })
     
@@ -92,10 +92,16 @@ function filtrarDespesas(){
     let valorMin = Number(document.getElementById('valorFiltroMin').value)
     let valorMax = Number(document.getElementById('valorFiltroMax').value)
 
-
-    let despesasFiltradas // AQUI NESSA VARIÁVEL VEM A IMPLEMENTAÇÃO
+// AQUI NESSA VARIÁVEL VEM A IMPLEMENTAÇÃO
+    let despesasFiltradas = arrDespesas.filter ((despesa) => {
+        if (despesa.valor > valorMin && despesa.valor < valorMax && despesa.tipo === tipoFiltro){
+            return true 
+        }
+    
+    })
 
     imprimirDespesas(despesasFiltradas)
+    
 }
 
 
