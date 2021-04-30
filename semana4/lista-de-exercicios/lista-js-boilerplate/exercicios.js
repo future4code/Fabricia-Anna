@@ -2,11 +2,11 @@
 
 function inverteArray(array) {
   // implemente sua lógica aqui
-  let arrInvertido = []
-  for (let i = array.length -1; i>=0; i--){
-     arrInvertido.push (array[i])
+  let arrInvertido = [] // declarada a array
+  for (let i = array.length -1; i>=0; i--){// condição para inverter a array
+     arrInvertido.push (array[i]) // pegando os valores da array
   }
-return arrInvertido
+return arrInvertido // retornando a função
 }
 
 //Exercício 2
@@ -19,9 +19,12 @@ function retornaNumerosParesElevadosADois (array) {
 
 function retornaNumerosPares (array) {
    // implemente sua lógica aqui
-   if (array.value % 2 === 0)
+   let pares = array.filter((number)=>{ // declara variavel pares e recebe o filtro da array
+   if (number % 2 === 0){ // condição se o numero for divisível por 2, o número é par e retornar verdadeiro
    return true
-
+   }
+})
+return pares // retornar os números pares
 }
 
 //Exercício 4
