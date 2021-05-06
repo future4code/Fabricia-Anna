@@ -7,9 +7,9 @@ import iconeCoracaoBranco from '../../img/favorite-white.svg'
 import iconeCoracaoPreto from '../../img/favorite.svg'
 import iconeComentario from '../../img/comment_icon.svg'
 import {SecaoComentario} from '../SecaoComentario/SecaoComentario' 
-//Não lembro o que significa as {SecaoComentario} 
 
-// É o css?
+
+
 const PostContainer = styled.div` 
   border: 1px solid gray;
   width: 300px;
@@ -42,7 +42,7 @@ const PostPhoto = styled.img`
   width: 100%;
 `
 
-class Post extends React.Component { //Não lembro do significado dessa linha
+class Post extends React.Component { 
   state = {
     curtido: false,
     numeroCurtidas: 0,
@@ -51,12 +51,25 @@ class Post extends React.Component { //Não lembro do significado dessa linha
   }
 
   onClickCurtida = () => {
-    console.log('Curtiu!')
-  }
+    this.setState({
+      curtido: !this.state.curtido                     
+       });
 
+       if (this.state.numeroCurtidas===0) {
+         this.setState({
+           numeroCurtidas:this.state.numeroCurtidas +1
+         })
+       } else {
+         this.setState({
+           numeroCurtidas: this.state.numeroCurtidas - 1
+         })         
+       }
+     }
+ 
+  
   onClickComentario = () => {
     this.setState({
-      comentando: !this.state.comentando // Muda seu status para diferente do seu status inicial
+      comentando: !this.state.comentando 
     })
   }
 
@@ -67,23 +80,31 @@ class Post extends React.Component { //Não lembro do significado dessa linha
     })
   }
 
+  onChangeComentando = (event) => {
+     this.setState({
+    comentando: event.target.value    
+   })
+     
+  }
+
+ 
   render() {
     let iconeCurtida
 
     if(this.state.curtido) {
-      iconeCurtida = iconeCoracaoPreto
+      iconeCurtida = iconeCoracaoPreto      
     } else {
-      iconeCurtida = iconeCoracaoBranco
+      iconeCurtida = iconeCoracaoBranco 
     }
-
+    
+        
     let componenteComentario
 
     if(this.state.comentando) {
       componenteComentario = <SecaoComentario aoEnviar={this.aoEnviarComentario}/>
-    } // Não entendi a linha 81
+      } 
+      
 
-    // Entender melhor a linha87
-    //Linha 96 - Icone, onclickIcone e valorContador, recebem valores em curtidas, todos veêm de IconeComContador e vão para o Footer
     return <PostContainer> 
       <PostHeader>
         <UserPhoto src={this.props.fotoUsuario} alt={'Imagem do usuario'}/>
@@ -95,8 +116,9 @@ class Post extends React.Component { //Não lembro do significado dessa linha
       <PostFooter>
         <IconeComContador
           icone={iconeCurtida}
-          onClickIcone={this.onClickCurtida}
+          onClickIcone={this.onClickCurtida} 
           valorContador={this.state.numeroCurtidas}
+                            
         /> 
         
         <IconeComContador
@@ -105,9 +127,13 @@ class Post extends React.Component { //Não lembro do significado dessa linha
           valorContador={this.state.numeroComentarios}
         />
       </PostFooter>
-      {componenteComentario}
+      {componenteComentario}  
+      {this.state.comentando}
+      
+       
+
     </PostContainer>
   }
 }
 
-export default Post // Não lembro o significado
+export default Post 

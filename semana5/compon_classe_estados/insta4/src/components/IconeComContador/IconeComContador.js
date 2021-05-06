@@ -14,3 +14,4 @@ export function IconeComContador(props) {
 		<p>{props.valorContador}</p>
 	</IconContainer>
 }
+//função para mudar os valores do icone, click e valor do contador.
