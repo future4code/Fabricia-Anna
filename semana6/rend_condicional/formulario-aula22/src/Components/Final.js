@@ -1,9 +1,15 @@
-function Final() {
+import React from 'react';
+
+export default class Final extends React.Component {
+  render() {
     return (
-      <div>
-        
-      </div>
+      <form>
+        <h3>O FORMULÁRIO ACABOU</h3>
+        <div>
+          <p>Muito obrigado por participar! Entraremos em contato!</p>
+        </div>
+      </form>
     );
   }
-  
-  export default Final;
+}
+
