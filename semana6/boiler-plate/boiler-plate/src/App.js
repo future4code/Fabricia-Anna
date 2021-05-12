@@ -9,7 +9,7 @@ const TarefaList = styled.ul`
 
 const Tarefa = styled.li`
   text-align: left;
-  text-decoration: ${({ completa }) => (completa ? 'line-through' : 'none')}; // Não entendi
+  text-decoration: ${({ completa }) => (completa ? 'line-through' : 'none')}; 
 `
 
 const InputsContainer = styled.div`
@@ -33,31 +33,64 @@ class App extends React.Component {
     }
     ],
     inputValue: '',
-    filtro: 'pendentes'
+    filtro: ''
   }
 
   componentDidUpdate() {
-
+    localStorage.setItem("tarefas", JSON.stringify(this.state.tarefas));
   };
 
   componentDidMount() {
-
+    {localStorage.getItem("tarefas") && this.setState({ tarefas: JSON.parse(localStorage.getItem("tarefas")) })}
   };
 
   onChangeInput = (event) => {
+    this.setState({ inputValue: event.target.value });
 
   }
 
   criaTarefa = () => {
 
+    const novaTarefa = {
+      id: Date.now(),
+      texto: this.state.inputValue,
+      completa: false
+    }
+
+    const novaListaTarefa = [novaTarefa, ... this.state.tarefas]
+    this.setState({ tarefas: novaListaTarefa })
   }
 
-  selectTarefa = (id) => {
+  apagarTarefa = (id) => { //não funcionou
+    console.log('apagar tarefa', id)
+    const novaListaTarefa = this.state.tarefas.filter((tarefa) =>{
+      if (id === tarefa.id)   {
+        return false
+      }  else{
+        return true
+      }
+    })
+    this.setState({tarefas:novaListaTarefa})
+  }
 
+  selectTarefa = (id) => { //não vi nenhuma alteraçao acontecer
+    const novaListaTarefa = this.state.tarefas.map((tarefa) => {
+      if (id === tarefa.id) {
+        const novaList = {
+          ...tarefa,
+          completa: !tarefa.completa
+        }
+        return novaList
+
+      } else {
+        return tarefa
+      }
+    })
+    this.setState({ tarefas: novaListaTarefa })
   }
 
   onChangeFilter = (event) => {
-
+    this.setState({ filtro: event.target.value });
   }
 
   render() {
@@ -78,6 +111,7 @@ class App extends React.Component {
         <InputsContainer>
           <input value={this.state.inputValue} onChange={this.onChangeInput} />
           <button onClick={this.criaTarefa}>Adicionar</button>
+          <button onClick={this.apagarTarefa}>Remover</button>
         </InputsContainer>
         <br />
 
