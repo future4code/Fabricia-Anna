@@ -9,7 +9,6 @@ const MainContainer = styled.div`
   flex-direction: column;
   align-items: center;
 `
-/*
 class App extends React.Component {
 
   state = {
@@ -18,8 +17,6 @@ class App extends React.Component {
       {id: 2, nome: "Fabricia", fotoPessoa: "https://picsum.photos/50/20", postFoto: "https://picsum.photos/200/150"},
       {id: 3, nome: "Silvio", fotoPessoa: "https://picsum.photos/50/30", postFoto: "https://picsum.photos/200/148"}
     ],
-
-*/
 
 
 class App extends React.Component {
