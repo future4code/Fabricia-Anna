@@ -19,8 +19,6 @@ class App extends React.Component {
     ],
 
 
-
-
 class App extends React.Component {
   render() {
     return (
