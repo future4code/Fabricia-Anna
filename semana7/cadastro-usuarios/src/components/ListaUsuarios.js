@@ -12,7 +12,15 @@ border: 1px solid black;
 border-left:none;
 border-right:none;
 border-top:none;
-back
+`
+const LayoutItem = styled.div `
+text-align: center;
+`
+
+const LayoutButton = styled.button `
+border-radius: 20px;
+width: 80px;
+height: 30px;
 `
 
 export default class ListaUsuarios extends React.Component {
@@ -61,16 +69,19 @@ export default class ListaUsuarios extends React.Component {
             return (
                 <CardUsuarios key={user.id}>
                     {user.name}
-                    <button onClick={() => this.deletarUsuario(user.id)}>x</button>
+                    <LayoutButton onClick={() => this.deletarUsuario(user.id)}>delete</LayoutButton>
                 </CardUsuarios>
             )
 
         })
         return (
             <div>
-                <button onClick={this.props.irParaCadastro}>Voltar</button>
-                <h2>Lista Usuários</h2>
+                <LayoutItem>
+                <LayoutButton onClick={this.props.irParaCadastro}>Voltar</LayoutButton>
+                <h2>Usuários Cadastrados:</h2>
                 {ListaUsuarios}
+                </LayoutItem>
+                
             </div>
 
         )

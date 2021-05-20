@@ -1,5 +1,33 @@
 import React from "react"
 import axios from "axios"
+import styled from "styled-components"
+import { thisExpression } from "@babel/types"
+
+const LayoutTelaCadastro = styled.div`
+text-align: center;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: 20px;
+border: 1px solid black;
+width: 20em;
+height: 10em;
+
+`
+const LayoutForm= styled.form`
+display: grid;
+justify-content: center;
+align-content: center;
+width: 20em;
+`
+const LayoutInput= styled.input`
+width: 25em;
+`
+
+const LayoutButton2 = styled.button `
+border-radius: 10px;
+width: 90px;
+height: 30px;
+text-align: center;
+`
 
 export default class CadastroUsuarios extends React.Component {
     state = {
@@ -39,23 +67,30 @@ export default class CadastroUsuarios extends React.Component {
     }
     render() {
         return (
+            
             <div>
-                <button onClick={this.props.irParaLista}>Lista de Usuários</button>
+                <LayoutTelaCadastro>
+                
                 <h2>Cadastro</h2>
-                <input
+                <LayoutForm>
+                <LayoutInput
                     placeholder={"Nome"}
                     value={this.state.nome}
                     onChange={this.handleNome}
                 >
-                </input>
+                </LayoutInput>
 
-                <input
+                <LayoutInput
                     placeholder={"E-mail"}
                     value={this.state.email}
                     onChange={this.handleEmail}
                 >
-                </input>
-                <button onClick={this.fazerCadastro}>Cadastrar</button>
+                </LayoutInput>
+                </LayoutForm>
+                
+                <LayoutButton2 onClick={this.fazerCadastro}>Cadastrar</LayoutButton2>
+                <LayoutButton2 onClick={this.props.irParaLista}>Go Lista</LayoutButton2>
+                </LayoutTelaCadastro>
             </div>
         )
     }
