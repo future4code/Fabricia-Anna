@@ -1,19 +1,19 @@
 import React from "react"
 import axios from "axios"
 
-export default class CadastroUsuarios extends React.Component{
-    state ={
-        nome:"",
-        email:""
-    
+export default class CadastroUsuarios extends React.Component {
+    state = {
+        nome: "",
+        email: ""
+
     }
 
     handleNome = (event) => {
-        this.setState ({nome: event.target.value})
+        this.setState({ nome: event.target.value })
     }
 
     handleEmail = (event) => {
-        this.setState ({email: event.target.value})
+        this.setState({ email: event.target.value })
     }
 
     fazerCadastro = () => {
@@ -23,40 +23,40 @@ export default class CadastroUsuarios extends React.Component{
             email: this.state.email
         }
 
-        axios.post (url, body,{
-            headers:{
+        axios.post(url, body, {
+            headers: {
                 Authorization: "fabricia-santanna-paiva"
             }
         })
-        .then ((resposta) => {
-            alert ("Usuário(a) cadastrado(a) com sucesso!")
-            this.setState ({nome:"", email:""})
-        })
-        .catch ((err) => {
-            alert (err.response.data.message)
-        })
-    
+            .then((resposta) => {
+                alert("Usuário(a) cadastrado(a) com sucesso!")
+                this.setState({ nome: "", email: "" })
+            })
+            .catch((err) => {
+                alert(err.response.data.message)
+            })
+
     }
-    render(){
-        return(
+    render() {
+        return (
             <div>
-                <button onClick = {this.props.irParaLista}>Ir para Lista de Usuários</button>
+                <button onClick={this.props.irParaLista}>Lista de Usuários</button>
                 <h2>Cadastro</h2>
-                <input 
-                placeholder={"Nome"}
-                value = {this.state.nome}
-                onChange = {this.handleNome}
+                <input
+                    placeholder={"Nome"}
+                    value={this.state.nome}
+                    onChange={this.handleNome}
                 >
                 </input>
 
-                <input 
-                placeholder={"E-mail"}
-                value = {this.state.email}
-                onChange = {this.handleEmail}
+                <input
+                    placeholder={"E-mail"}
+                    value={this.state.email}
+                    onChange={this.handleEmail}
                 >
                 </input>
-                <button onClick = {this.fazerCadastro}>Cadastrar</button>
-                </div>
+                <button onClick={this.fazerCadastro}>Cadastrar</button>
+            </div>
         )
     }
 }

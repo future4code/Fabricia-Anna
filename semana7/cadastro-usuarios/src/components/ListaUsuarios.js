@@ -9,6 +9,10 @@ width: 20em;
 padding: 10px;
 margin: 10px;
 border: 1px solid black;
+border-left:none;
+border-right:none;
+border-top:none;
+back
 `
 
 export default class ListaUsuarios extends React.Component {
@@ -64,7 +68,7 @@ export default class ListaUsuarios extends React.Component {
         })
         return (
             <div>
-                <button onClick={this.props.irParaCadastro}>Ir para Cadastro</button>
+                <button onClick={this.props.irParaCadastro}>Voltar</button>
                 <h2>Lista Usuários</h2>
                 {ListaUsuarios}
             </div>
