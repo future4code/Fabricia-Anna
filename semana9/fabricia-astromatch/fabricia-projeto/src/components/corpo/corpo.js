@@ -5,10 +5,10 @@ const LayoutCorpo = Styled.div `
 height: 45vh;
 `
 
-export default class CorpoHome extends React.Component {
-    render() {
-        return (
-            <LayoutCorpo>Corpo</LayoutCorpo>
-        );
-    }
+const CorpoHome = () =>{
+    return (
+        <LayoutCorpo>Corpo</LayoutCorpo>
+    );
 }
+        
+export default CorpoHome

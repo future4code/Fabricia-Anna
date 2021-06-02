@@ -14,9 +14,8 @@ width: 0 auto;
 `
 
 
-export default class Botao extends React.Component {
-    render() {
-        return (
+const Botao = () =>  {
+            return (
             <CorpoFooter>
                 <BotaoFooter>Recusar</BotaoFooter>
                 <BotaoFooter>Aceitar</BotaoFooter>
@@ -24,6 +23,7 @@ export default class Botao extends React.Component {
             </CorpoFooter>
 
         );
-    }
-
+    
 }
+
+export default Botao

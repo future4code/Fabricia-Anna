@@ -1,46 +1,41 @@
-import React from 'react';
-import Styled from 'styled-components';
-import Botao from './components/botoes/botoes';
+import React, { useState } from 'react';
+import Cabecalho from './components/cabecalho/cabecalho';
+import HomeMatch from './components/Home/HomeMatch';
+import ListaMatch from './components/listaMatch/ListaMatch';
 
-import Cabecalho from './components/cabecalho/cabecalho'
-import CorpoHome from './components/corpo/corpo';
-
-
-
-const ContainerHome = Styled.div`
-  display: flex;  
-  flex-direction:column;  
-  width: 400px;
-  height: 60vh; 
-  margin: 0 auto;
-  margin-top: 20vh;
-  padding: 0;
-  background-image: linear-gradient(to right, #ef0b7c, #fb6e5a);
-  
-`
+const AppLista = () => {
+  const [irLista, setIrLista] = useState("home")
 
 
-export default class App extends React.Component {
-  render() {
-    return (
-      <div>
-        <ContainerHome>
-          <div>
-            <Cabecalho />
-          </div>
-          <div><CorpoHome /></div>
-          <div>
-            <Botao />
-          </div>
+  const EscolherTela = () => {
+    switch (irLista) {
+      case "home":
+        return <HomeMatch />;
+      case "lista":
+        return <ListaMatch />
+      default:
+        return <HomeMatch />
+    }
+  };
 
-        </ContainerHome>
+  const MudaTelaList = () => {
+    setIrLista("home")
+  };
 
-      </div>
+  const MudaTelaHome = () => {
+    setIrLista("lista")
+  };
 
 
-    );
-  }
+
+  return (
+    <div>
+     <Cabecalho MudaTelaHome={MudaTelaHome} />
+     {EscolherTela()}
+    </div>
+  );
 
 }
+export default AppLista
 
 
