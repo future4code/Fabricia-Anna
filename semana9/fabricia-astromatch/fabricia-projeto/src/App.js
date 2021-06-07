@@ -11,7 +11,7 @@ const AppLista = () => {
     <div>
      <HomeMatch  />  
      <ResetaBotao />   
-     {/*EscolherTela()*/}
+     
     </div>
   );
 
