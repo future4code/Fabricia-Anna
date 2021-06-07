@@ -1,14 +1,50 @@
-import React from 'react';
-import Styled from 'styled-components';
+import React, { useState, useEffect } from 'react';
+import BotaoDecide from './BotaoDecide';
+import Cartela from './cartela';
+import axios from 'axios'
 
-const LayoutCorpo = Styled.div `
-height: 45vh;
-`
 
-const CorpoHome = () =>{
+function PerfilHome() {
+    const [CorpoPerfil, setCorpoPerfil] = useState({})
+
+    const pegarPerfil = () => {
+        axios.get('https://us-central1-missao-newton.cloudfunctions.net/astroMatch/fabricia/person')
+            .then((res) => {
+                setCorpoPerfil(res.data.profile)
+            })
+    }
+
+    const aceitareNaoPerfil = (choice) => {
+        const corpo = {
+            choice: choice,
+            id: CorpoPerfil.id
+        }
+        axios.post('https://us-central1-missao-newton.cloudfunctions.net/astroMatch/fabricia/choose-person', corpo)
+            .then((res) => {
+                pegarPerfil()
+            })
+    }
+
+
+    useEffect(() => {
+        pegarPerfil()
+    }, []);
+
+    const BotaoNao = () => {
+        aceitareNaoPerfil(false)
+    }
+
+    const BotaoSim = () => {
+        aceitareNaoPerfil(true)
+    }
+
     return (
-        <LayoutCorpo>Corpo</LayoutCorpo>
+        <div>
+            <Cartela perfil={CorpoPerfil} />
+            <BotaoDecide BotaoNao={BotaoNao} BotaoSim={BotaoSim} />
+        </div>
+
     );
 }
-        
-export default CorpoHome
+
+export default PerfilHome;

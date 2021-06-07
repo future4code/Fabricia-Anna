@@ -1,11 +1,12 @@
 import React from 'react';
 import Styled from 'styled-components';
-import ListaMatch from '../listaMatch/ListaMatch';
-import HomeMatch from '../Home/HomeMatch';
 
-const HomeCabecalho = Styled.div `
+
+const HomeCabecalho = Styled.div`
  { display: flex;    
-   justify-content:center;  
+   justify-content: space-between;  
+   align-items: center;
+   padding: 0 8px;
    margin-top:10px ;
    border: 1px solid white;
    border-right: none;
@@ -22,27 +23,22 @@ const HomeCabecalho = Styled.div `
     font-weight:bolder;    
  }
 
- button {
-         display: flex;
-         align-items:center;
-         margin-left: 10px;
-         margin-top: 5px;
-         border:none;
-         color:black;
-         height: 30px;
-
- }
 `
 
 
-const Cabecalho = (props) => {    
+const Cabecalho = (props) => {
         return (
-            <HomeCabecalho>                
-                    <p>AstroMatch</p>                      
-                    <button onClick = {props.MudaTelaHome}>List</button>                       
-                               
-            </HomeCabecalho>
-        );    
+                <div>
+                        <HomeCabecalho>
+                                <button onClick={props.MudaTelaList}>Voltar</button>
+                                <p>AstroMatch</p>
+                                <button onClick={props.MudaTelaHome}>Lista</button>
+
+
+                        </HomeCabecalho>
+                </div>
+
+        );
 
 }
 
