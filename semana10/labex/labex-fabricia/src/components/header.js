@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import IconeFoguete from '../img/foguete.png';
-import IconeLogin from '../img/login.png'
+import IconRocket from '../img/foguete.png';
+import IconLogin from '../img/login.png'
 import LogoLabex from '../img/labex.png'
 import { Link } from 'react-router-dom'
 
@@ -11,7 +11,7 @@ background-color:purple;
 width: 100%;
 height: 22vh;
 `
-const IcoFoguete = styled.div` 
+const IcoRocket = styled.div` 
   display: flex;   
   width: 65px;
   height: 65px;   
@@ -21,7 +21,7 @@ const IcoFoguete = styled.div`
   
 `
 const IcoLogin = styled.div` 
- display: flex;   
+  display: flex;   
   width: 50px;
   height: 50px;   
   margin-left: 2em;
@@ -47,15 +47,15 @@ const HeaderPage = () => {
                 </Logo>
                 </Link>
 
-                <Link to="/ListTrip">
-                <IcoFoguete>
-                    <img src={IconeFoguete} alt={"Viagem"} />
-                </IcoFoguete>
+                <Link to="/trips/list">
+                <IcoRocket>
+                    <img src={IconRocket} alt={"Viagem"} />
+                </IcoRocket>
                 </Link>
 
-                <Link to="/Login">
+                <Link to="/login">
                     <IcoLogin>
-                        <img src={IconeLogin} alt={"Admin"} />
+                        <img src={IconLogin} alt={"Admin"} />
                     </IcoLogin>
                 </Link>
                 

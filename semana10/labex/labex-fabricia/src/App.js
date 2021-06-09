@@ -1,10 +1,10 @@
 import React from 'react'
-import HomePage from './Pages/HomePage';
-import {Switch, Route, Link} from 'react-router-dom';
+import HomePage from './Pages/HomePage/HomePage';
 
 
 
-function App() {
+
+const App = () => {
   return (
     <div>
       <HomePage>
