@@ -1,6 +1,7 @@
 import React from 'react'
 import HeaderPage from '../../components/header';
 import {PageImg} from '../ListTripsPage/ListTripStyled'
+import BodyAppForm from '../../components/AppFormPage'
 
 
 
@@ -11,6 +12,7 @@ const ApplicationFormPage = () => {
         <div>
             <HeaderPage />
             <PageImg>
+           <BodyAppForm />
 
             </PageImg>
         </div>
