@@ -11,6 +11,8 @@ export const FormatFather = styled.div `
 display: grid;
 grid-template-rows: 150px 80px;
 justify-content: center;
+align-items: center;
+
 `
 
 export const DivButton = styled.div ` 
@@ -33,10 +35,10 @@ justify-content: center;
 width: 25em;
 height: 50px;  
 margin-top: 10vh;
-margin-left: 70px;
 opacity: 0.5;   
 
 p{
+    
     color: black;
     font-size: 30px;
     font-weight: bold;
