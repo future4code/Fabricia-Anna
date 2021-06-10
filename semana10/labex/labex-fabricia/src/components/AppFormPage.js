@@ -14,7 +14,7 @@ width: 100px;
 height: 40px;
 font-size: 20px;
 font-weight: bold;
-border-radius: 10px;
+border-radius: 20px;
 background-color: purple;
 color: white;
 border-style:none;
@@ -44,14 +44,13 @@ opacity: 0.8;
 `
 
 const FormatSelecttApp = styled.select` 
-width: 38.7em;
-height: 30px;
-border-radius: 10px;
-padding: 4px 8px;
-border-width: 1px;
-border-color: gray;
-margin: 0 0 15px 0;
-opacity: 0.8;
+width: 518px;
+    height: 40px;
+    border-radius: 10px;
+    padding: 4px 8px;
+    border-width: 1px;
+    margin: 0 0 15px 0;
+    opacity: 0.8;
 `
 
 const BodyAppForm = () => {

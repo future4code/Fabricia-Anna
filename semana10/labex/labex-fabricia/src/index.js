@@ -1,8 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import HomePage from './Pages/HomePage/HomePage';
 import LoginPage from './Pages/LoginPage/LoginPage';
@@ -24,6 +22,7 @@ ReactDOM.render(
       <Route path="/admin/trips/list" component={AdminHomePage} />
       <Route path="/admin/trips/create" component={TripDetails} />
       <Route path="/admin/trips/:id" component={CreatTrip} />
+      <Route><div>Erro 404</div></Route>
     </Switch>
   </BrowserRouter>,
   document.getElementById("root")
