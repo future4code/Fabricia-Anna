@@ -3,7 +3,7 @@ import HeaderPage from '../../components/header';
 import { PageImg } from '../ListTripsPage/ListTripStyled'
 import { useTripsList } from '../../Hooks/useTrips'
 import { useProtectedPage } from '../../Hooks/useProtectedPage'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 
 
@@ -18,6 +18,7 @@ const AdminHomePage = () => {
             <HeaderPage />
 
             <PageImg>
+            
                 <Link to={"/admin/trips/create"}>
                     <button>Criar Viagem</button>
                 </Link>

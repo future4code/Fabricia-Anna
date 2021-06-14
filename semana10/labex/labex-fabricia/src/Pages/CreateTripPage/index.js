@@ -8,7 +8,7 @@ const PageCriateTrip = () => {
         <div>
             <HeaderPage />
             <PageImg>
-
+            <h1>Criar Viagem</h1>
             </PageImg>
         </div>
 
