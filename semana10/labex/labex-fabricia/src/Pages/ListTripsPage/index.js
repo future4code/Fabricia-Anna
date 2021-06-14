@@ -1,19 +1,19 @@
 import React from 'react'
 import HeaderPage from '../../components/header';
-import {PageImg} from '../ListTripsPage/ListTripStyled'
+import BodyListTrip from '../../components/PageTripList';
+import { PageImg } from './ListTripStyled'
 
 
-
-const AdminHomePage = () => {
+const ListTrip = () => {
     return (
         <div>
             <HeaderPage />
             <PageImg>
-
+                
             </PageImg>
         </div>
 
     )
 }
 
-export default AdminHomePage
+export default ListTrip
