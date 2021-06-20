@@ -1,18 +1,24 @@
 import React from 'react'
 import HeaderPage from '../../components/header';
-import {PageImg} from '../ListTripsPage/ListTripStyled'
+import {PageImg, ContainerTitle, Title} from '../ListTripsPage/ListTripStyled'
 
 
-const PageCriateTrip = () => {
+const CreateTripPage = () => {
     return (
         <div>
             <HeaderPage />
             <PageImg>
-            <h1>Criar Viagem</h1>
+
+            <ContainerTitle>
+                    <Title>
+                        <p>Criar Viagem</p>
+                    </Title>
+                </ContainerTitle>
+            
             </PageImg>
         </div>
 
     )
 }
 
-export default PageCriateTrip
+export default CreateTripPage

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Title, TextTrips, FormatFather,DivButton } from '../Pages/ListTripsPage/ListTripStyled'
+import { Title, TextTrips, FormatFather, DivButton, ContainerTitle } from '../Pages/ListTripsPage/ListTripStyled'
 import { Link } from 'react-router-dom'
 
 const BodyListTrip = () => {
@@ -30,16 +30,23 @@ const BodyListTrip = () => {
         },
     ]
     return (
-        <FormatFather>
-            <Title>
-                <p>LabeX Viagens</p>
-            </Title>
+        <FormatFather>            
 
             <DivButton>
+            <Link to="/">
+                    <button>Voltar</button>
+                </Link>
                 <Link to="/trips/application">
                     <button>Viajar</button>
                 </Link>
             </DivButton>
+
+            <ContainerTitle>
+            <Title>
+                <p>LabeX Viagens</p>
+            </Title>
+            </ContainerTitle>
+            
 
             <TextTrips>
                 <p>Nome: PLANEJAMENTO</p>
@@ -48,6 +55,7 @@ const BodyListTrip = () => {
                 <p>Duração: 70</p>
                 <p>Dados: 2032-12-12 </p>
             </TextTrips>
+            
         </FormatFather>
 
     )

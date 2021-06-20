@@ -49,7 +49,7 @@ opacity: 0.8;
 
 export const FormatButton = styled.div`
 display: flex;
-justify-content: space-around;
+justify-content: space-between;
 margin-top: 3em;
 
 button{    

@@ -4,12 +4,15 @@ import { PageImg } from '../ListTripsPage/ListTripStyled'
 import { useTripsList } from '../../Hooks/useTrips'
 import { useProtectedPage } from '../../Hooks/useProtectedPage'
 import { Link } from 'react-router-dom'
+import { ContainerDelTrip } from './styled';
+import { ContainBody, ButtonContainer } from './styled'
+import { ContainerTitle, Title, DivButton } from '../ListTripsPage/ListTripStyled';
 
 
 
 
 
-const AdminHomePage = () => {
+const AdminTripList = () => {
     const trips = useTripsList()
     useProtectedPage()
 
@@ -18,10 +21,34 @@ const AdminHomePage = () => {
             <HeaderPage />
 
             <PageImg>
-            
-                <Link to={"/admin/trips/create"}>
-                    <button>Criar Viagem</button>
-                </Link>
+                <ContainerTitle>
+                    <Title>
+                        <p>Painel Administrativo</p>
+                    </Title>
+                </ContainerTitle>
+                <ContainBody>
+                    <DivButton>
+
+                        <Link to={"/"}>
+                            <button>Voltar</button>
+                        </Link>
+
+                        <Link to={"/admin/trips/create"}>
+                            <button>Criar Viagem</button>
+                        </Link>
+
+                        <Link to={"/login"}>
+                            <button>Sair</button>
+                        </Link>
+
+
+                    </DivButton>
+
+                    <ContainerDelTrip>
+                        <p>Viagem: Vênus</p>
+                    </ContainerDelTrip>
+                </ContainBody>
+
             </PageImg>
         </div>
 
@@ -29,4 +56,4 @@ const AdminHomePage = () => {
 
 }
 
-export default AdminHomePage
+export default AdminTripList

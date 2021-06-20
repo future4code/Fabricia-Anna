@@ -16,8 +16,9 @@ align-items: center;
 `
 
 export const DivButton = styled.div ` 
-display: grid;
+display: flex;
 justify-content: center;
+justify-content: space-evenly;
 
 
 button{
@@ -35,6 +36,14 @@ border-radius: 20px;
 }
 }
 `
+export const ContainerTitle = styled.div`
+display:flex; 
+align-items: center;
+justify-content: center;
+margin-bottom: 30px;
+
+` 
+
 
 export const Title = styled.div` 
 display:flex; 

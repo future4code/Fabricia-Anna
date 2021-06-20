@@ -1,5 +1,5 @@
 import React from 'react'
-import { Title, FormatFather } from '../Pages/ListTripsPage/ListTripStyled'
+import { Title, FormatFather, ContainerTitle } from '../Pages/ListTripsPage/ListTripStyled'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
@@ -53,13 +53,18 @@ width: 518px;
     opacity: 0.8;
 `
 
+const buttonalert = () => {
+    alert('Aplicação enviada com sucesso!')
+}
+
 const BodyAppForm = () => {
     return (
         <FormatFather>
+            <ContainerTitle>
             <Title>
                 <p>Embarque numa viagem</p>
             </Title>
-
+            </ContainerTitle>
 
             <InputAppForm>                
                 
@@ -78,8 +83,6 @@ const BodyAppForm = () => {
                     <option value="DE">Alemanha</option>
                 </FormatSelecttApp>
 
-
-
             </InputAppForm>
 
 
@@ -88,7 +91,7 @@ const BodyAppForm = () => {
                     <button>Voltar</button>
                 </Link>
                 <Link to="/trips/application">
-                    <button>Enviar</button>
+                    <button onClick={buttonalert}>Enviar</button>
                 </Link>
             </ButtonDiv>
         </FormatFather>

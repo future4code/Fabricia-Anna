@@ -1,7 +1,7 @@
 import React from 'react'
 import HeaderPage from '../../components/header';
-import BodyListTrip from '../../components/PageTripList';
 import { PageImg } from './ListTripStyled'
+import PageTripList from '../../components/PageTripList'
 
 
 const ListTrip = () => {
@@ -9,7 +9,7 @@ const ListTrip = () => {
         <div>
             <HeaderPage />
             <PageImg>
-                
+                <PageTripList />
             </PageImg>
         </div>
 
