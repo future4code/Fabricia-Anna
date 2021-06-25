@@ -4,13 +4,15 @@ import TextField from "@material-ui/core/TextField"
 import useForm from "../../hooks/useForm"
 import Button from "@material-ui/core/Button"
 import { useHistory } from "react-router-dom"
+import {signUp} from "../../services/user"
 
 const SignUpForm = () => {
     const history = useHistory()
-    const [form, onChange, clear] = useForm({ name:"", email: "", password: "", })
+    const [form, onChange, clear] = useForm({ username:"", email: "", password: "" })
 
     const onSubmitForm = (event) => {
         event.preventDefault()
+        signUp(form, clear, history)
     }
 
     return (
@@ -18,7 +20,7 @@ const SignUpForm = () => {
             <SignUpFormContainer>
                 <InputsContainer>
                     <TextField
-                        name={"name"}
+                        name={"username"}
                         value={form.name}
                         onChange={onChange}
                         label={"Nome"}
@@ -26,6 +28,7 @@ const SignUpForm = () => {
                         fullWidth
                         margin={"normal"}
                         required
+                        autoFocus
                     />
                     <TextField
                         name={"email"}
