@@ -4,13 +4,13 @@ import logo from "../../assets/CARIMBO BEEF SANDUBA.png"
 import SignUpForm from "./SignUpForm"
 import useUnprotectedPage from "../../hooks/useUnprotectedPage"
 
-const SignUpPage = () => {
+const SignUpPage = ({setRightButtonText}) => {
     useUnprotectedPage()
     
     return (
         <ScreenContainer>
             <LogoImage src={logo} />
-            <SignUpForm />        
+            <SignUpForm setRightButtonText={setRightButtonText} />        
         </ScreenContainer>
 
 
